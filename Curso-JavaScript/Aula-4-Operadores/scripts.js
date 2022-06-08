@@ -1,7 +1,7 @@
 function comparaNumeros(num1, num2) {
-    const primeiraFrase = saoIguais(num1, num2);
-    const segundaFrase = somaNums(num1, num2);
-    return `${primeiraFrase} ${segundaFrase}`;
+    const PRIMEIRAFRASE = saoIguais(num1, num2);
+    const SEGUNDAFRASE = somaNums(num1, num2);
+    return `${PRIMEIRAFRASE} ${SEGUNDAFRASE}`;
 }
 
 function saoIguais(num1, num2) {
