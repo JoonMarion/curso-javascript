@@ -52,9 +52,18 @@ console.log(object.number);
 var string = object.string;
 console.log(string);
 
-/* ARRAY WITH ARGUMENT */
+/* COMBINAR ELEMENTO INDEPENDENTE EM UM ARRAY */
 const arrayWithArgument = (...args) => {
     return console.log(args);
 };
 
 arrayWithArgument(1, 'dois', 3);
+
+/* SEPARANDO ARRAY EM ELEMENTOS INDEPENTES */
+function sum(x, y, z) {
+    return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+console.log(sum(...numbers));
