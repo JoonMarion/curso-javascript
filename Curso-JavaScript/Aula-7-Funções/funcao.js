@@ -16,19 +16,27 @@ var funcao1 = function () {
 };
 funcao1();
 
+// // //
+
 function funcao2() {
     console.log('Função 2');
 }
 funcao2();
+
+// // //
 
 var funcao3 = () => {
     console.log('Função 3');
 };
 funcao3();
 
+// // //
+
 (function () {
     console.log('Funcao anônima');
 })();
+
+// // //
 
 setTimeout(function () {
     console.log('After 2 seconds');
@@ -40,5 +48,35 @@ let show = () => {
 };
 show();
 
+// // //
+
 let add = (a, b) => a + b;
 console.log(add(1, 2));
+
+// // //
+
+/* IIFE FUNÇÃO AUTO INVOCÁVEL */
+(function () {
+    console.log('IIFE');
+})();
+
+// CALLBACK
+
+/* callback */
+const calc = function (operacao, num1, num2) {
+    return operacao(num1, num2);
+};
+
+const soma = function (num1, num2) {
+    return num1 + num2;
+};
+
+const sub = function (num1, num2) {
+    return num1 - num2;
+};
+
+const resultSoma = calc(soma, 10, 5);
+const resultSub = calc(sub, 10, 5);
+
+console.log(resultSoma);
+console.log(resultSub);
